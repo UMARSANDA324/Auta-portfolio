@@ -55,7 +55,7 @@ const properties = [
     price: '₦95,000,000',
     type: 'Sale',
     category: 'House',
-    image: 'https://images.unsplash.com/photo-1600566753086-00f18efc2291?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
   }
 ];
 

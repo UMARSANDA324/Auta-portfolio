@@ -180,20 +180,27 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="cta-section text-center py-20 bg-primary text-white">
+      <section className="cta-section">
         <div className="container">
-          <h2 className="text-4xl font-heading mb-6">Ready to find your dream property?</h2>
-          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-            Get in touch with us today. Our experts are ready to guide you through the process.
-          </p>
-          <a 
-            href="https://wa.me/2349036389642?text=Hello,%20I%E2%80%99m%20interested%20in%20your%20properties" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn btn-primary btn-lg"
-          >
-            Message Us on WhatsApp
-          </a>
+          <div className="cta-box fade-in">
+            <h2 className="cta-title">Ready to find your <span className="text-gold">dream property</span>?</h2>
+            <p className="cta-subtitle">
+              Whether you're looking for a luxury home or a strategic land investment, our experts are here to guide you every step of the way.
+            </p>
+            <div className="cta-buttons">
+              <a 
+                href="https://wa.me/2349036389642?text=Hello,%20I%E2%80%99m%20interested%20in%20your%20properties" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-primary btn-lg"
+              >
+                Contact via WhatsApp
+              </a>
+              <Link to="/contact" className="btn btn-outline-white btn-lg">
+                Send an Email
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </div>
