@@ -1,0 +1,261 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #E2E8F0;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+/* Typography elements */
+.mb-12 { margin-bottom: 3rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-4 { margin-top: 1rem; }
+.pt-4 { padding-top: 1rem; }
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+.p-8 { padding: 2rem; }
+.p-6 { padding: 1.5rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-lg { font-size: 1.125rem; }
+.font-medium { font-weight: 500; }
+.border-t { border-top: 1px solid #E2E8F0; }
+.max-w-2xl { max-width: 42rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.text-white { color: white; }
+.text-gray-300 { color: #CBD5E1; }
+.bg-light { background-color: #F8FAFC; }
+.bg-primary { background-color: var(--color-primary); }
+.bg-gold { background-color: var(--color-gold); }
+.relative { position: relative; }
+.btn-lg { padding: 1rem 2rem; font-size: 1.125rem; }
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.title-divider {
+  height: 3px;
+  width: 80px;
+  background-color: var(--color-gold);
+  margin: 0 auto 1.5rem;
+}
+
+.title-divider.left {
+  margin: 0 0 1.5rem 0;
+}
+
+.section-description {
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+}
+
+/* Service Cards */
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(197, 160, 89, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background-color: var(--color-gold);
+  color: white;
+}
+
+.service-card:hover .service-icon * {
+  color: white;
+}
+
+.icon-placeholder {
+  font-size: 2rem;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-desc {
+  color: var(--color-text-light);
+}
+
+/* Trust Section */
+.trust-section {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 8rem 0;
+}
+
+.trust-desc {
+  color: #94A3B8;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.feature-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(197, 160, 89, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-title {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.feature-desc {
+  color: #94A3B8;
+  font-size: 0.875rem;
+}
+
+.trust-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-luxury);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  background-color: var(--color-gold);
+  color: white;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.exp-number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.exp-text {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+/* Property Cards */
+.property-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.property-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.property-card:hover .property-img {
+  transform: scale(1.1);
+}
+
+.property-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-gold);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.property-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.property-location {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}
+
+.property-price {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .experience-badge {
+    bottom: -15px;
+    left: -15px;
+    padding: 1.5rem;
+  }
+  .trust-image {
+    height: 400px;
+  }
+}
