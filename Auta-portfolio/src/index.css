@@ -32,12 +32,18 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  padding-top: 70px; /* Space for fixed navbar */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,6 +71,7 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  overflow: hidden; /* Contain any overflowing children */
 }
 
 .section {
